@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Manokwari | BlankOn Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/manokwari.css" rel="stylesheet">
+
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  </head>
+
+  <body data-spy="scroll">
+    <header>
+      <div class="navbar navbar-fixed-bottom">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            
+            <div class="nav-collapse">
+              <ul id="navbar" class="nav pull-right">
+                <li class="active"><a href="#home" data-scroll="true">Home</a></li>
+                <li><a href="#screenshots" data-scroll="true">Screenshots</a></li>
+                <li><a href="#documentation" data-scroll="true">Documentation</a></li>
+                <li><a href="#contribute" data-scroll="true">Contribute</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="home" class="hero-bgr home">
+      <div class="hero-unit">
+        <div class="logo">
+            <img src="img/logo.png" width="400px">
+        </div>
+        <div class="description">
+            <h1>Desktop shell for GNOME 3 with Gtk+ and HTML5 frontend</h1>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn btn-large"><i class="icon-eye-open"></i> View Project</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn btn-large"><i class="icon-download-alt"></i> Download</a>
+        </div>
+        <ul class="follow-button">
+            <li><div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-action="recommend"></div>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="@blankonlinux" data-hashtags="Manokwari">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+            <li><a href="https://twitter.com/blankonlinux" class="twitter-follow-button" data-show-count="false">Follow @blankonlinux</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div id="screenshots" class="row screenshots">
+        <h1 class="page-header">Screenshots</h1>
+         <div id="showcase" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/a.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="img/a.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="img/a.jpg" alt="">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#showcase" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#showcase" data-slide="next">&rsaquo;</a>
+          </div>
+      </div>
+      <div id="documentation" class="row documentation">
+        <h1 class="page-header">Documentation</h1>
+        <div class="container">
+            <h3>Installing</h3>
+            <br>
+            <h4>Try with BlankOn</h4>
+            <p>Manokwari used by BlankOn Linux, so to try it directly you can use it.</p>
+            <br>
+            <h4>From source</h4>
+            <p>Download the source code of Manokwari with git</p>
+            <code>git clone https://github.com/BlankOn/manokwari.git</code>
+            <br><br>
+            <p>Or directly from master tarball</p>
+            <a href="https://github.com/BlankOn/manokwari/zipball/master" class="btn">Tarball</a>
+            <br><br>
+            <p>Install some packages dependencies for compilation on BlankOn/Debian or Ubuntu (not tested on Ubuntu)</p>
+            <code>sudo apt-get gnome-common, libcairo2-dev, libgee-dev, libglib2.0-dev, libgnome-menu-dev, libgtk-3-dev, libtool, libunique-3.0-dev, libvala-0.12-dev, valac</code>
+            <br><br>
+            <p>Build and install source</p>
+            <code>cd manokwari</code><br><code>sh autogen.sh</code><br><code>make</code><br><code>sudo make install</code>
+            <br><br>
+            <h3>Design</h3>
+            <p><a href="https://github.com/BlankOn/manokwari/blob/master/DESIGN.md">https://github.com/BlankOn/manokwari/blob/master/DESIGN.md</a></p>
+            <h3>Hacking</h3>
+            <p><a href="https://github.com/BlankOn/manokwari/blob/master/HACKING.md">https://github.com/BlankOn/manokwari/blob/master/HACKING.md</a></p>
+        </div>
+      </div>
+        <div id="contribute" class="row contribute">
+            <h1 class="page-header">Contribute</h1>
+        </div>
+    </div>
+    <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#showcase").carousel();
+            $('body').scrollspy({ offset: 0 })
+        
+            function scrollTo(element) {
+                $('html, body').animate({
+                    scrollTop: $(element).offset().top
+                }, 1000, "easeOutBack");
+            }
+        
+            $('a[data-scroll="true"]').each(function() {
+                $(this).click(function () {
+                    scrollTo($(this).attr("href"));
+                    return false;
+                })
+            });
+        });
+    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/id_ID/all.js#xfbml=1&appId=117848818264840";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </body>
+</html>
